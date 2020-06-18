@@ -1,23 +1,25 @@
 {
-  "name": "tesass",
-  "version": "1.0.0",
-  "description": "Use Sass with Typecho, Node Script in SCSS flavour.",
-  "scripts": {
-    "css": "node-sass --output-style compressed --include-path scss assets/css/source.scss style.css",
-    "watch": "nodemon -e scss -x \"npm run css\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/benzBrake/TESass.git"
-  },
-  "author": "Ryan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/benzBrake/TESass/issues"
-  },
-  "homepage": "https://github.com/benzbrake/TESass#readme",
-  "devDependencies": {
-    "node-sass": "^4.5.3",
-    "nodemon": "^1.11.0"
-  }
+    "name": "tesass",
+    "version": "1.0.0",
+    "description": "Use Sass with Typecho, Node Script in SCSS flavour.",
+    "scripts": {
+        "css": "node-sass --output-style compressed --include-path scss assets/css/source.scss style.css",
+        "php": "cd ../../../ && php -S localhost:${PORT:-80}",
+        "watch": "nodemon -e scss -x \"npm run css\"",
+        "zip": "FILENAME=`grep '\"name\"' package.json | cut -d '\"' -f 4`@`grep '\"version\"' package.json | cut -d '\"' -f 4` && zip -q -r ../${FILENAME}.zip * -x 'node_modules/*' '.git/*' 'package-lock.json' "
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/benzBrake/TESass.git"
+    },
+    "author": "Ryan",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/benzBrake/TESass/issues"
+    },
+    "homepage": "https://github.com/benzbrake/TESass#readme",
+    "devDependencies": {
+        "node-sass": "^4.5.3",
+        "nodemon": "^1.11.0"
+    }
 }

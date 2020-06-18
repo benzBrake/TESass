@@ -55,6 +55,7 @@ assets/bower_components/*
 # NPM #
 ##########
 node_modules
+package-lock.json
 
 # Compiled Files and Build Dirs #
 ##########

@@ -98,7 +98,13 @@ npm run css
 npm run watch
 ```
 
+```bash
+# Pack your theme.
+npm run zip
+```
+
 ![Run](https://i.imgur.com/tIelJwy.gif)
+
 
 ## → STEP #6: Share!
 
@@ -109,10 +115,10 @@ Feel free to contribute. PR's are welcomed.
 
 ## Changelog
 
-### Version 1.0.0 
-- First version
+### Version 1.0.1 
 - Compile: SCSS to CSS
 - Watch: Changes in SCSS
+- Zip: Pack theme
 
 
 ## License
